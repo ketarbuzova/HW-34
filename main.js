@@ -130,3 +130,9 @@ do {
     }
 }
 while (confirm(weekDay + '. Хочеш побачити наступний день?'));
+
+let days = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя'];
+let currDay = 0;
+while (confirm(`${days[currDay]}. . Хочеш побачити наступний день?`)){
+    currDay = (currDay + 1) % days.length;
+}
